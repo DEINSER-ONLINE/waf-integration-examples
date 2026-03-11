@@ -14,13 +14,10 @@ Example of common `index.php` as starting app point:
 ```php
 define('DEINSER_WAF_TOKEN', 'your-web-account-token');
 // Optional: Enable real-time blocking evaluation (Pro tier or higher required)
-// define('DEINSER_WAF_REALTIME', 1);
+//define('DEINSER_WAF_REALTIME', 1);
 
 require_once __DIR__ . '/deinser-waf.php';
-
 //Your boostrap start application code
-```
-# End of Selection
 ```
 
 
