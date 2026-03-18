@@ -250,7 +250,7 @@ function print_deinser_waf_blocked_html(string $ip): void
             </div>
         </body>
         </html>
-        EOF;
+EOF;
     echo $html;
 }
 
