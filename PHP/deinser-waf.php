@@ -144,8 +144,9 @@ function deinser_log_request(string $endpoint, string $ipFilename, string $token
     deinser_fire_and_forget_log($endpoint, $token, $userAgent, $ip, $path, $ua, $blocked, $type, $referrer);
 
     if ($blocked) {
-        print_deinser_waf_blocked_html($ip);
         http_response_code(403);
+        header('HTTP/1.1 403 Forbidden');
+        print_deinser_waf_blocked_html($ip);
         exit;
     }
 }
